@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Browser Tabs</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body class="body dark-theme">
+    <div id="custom-browser-container">
+        <div class="window-tabs-wrapper">
+            <div class="tabs-container-wrapper">
+                <div id="tabs-container"></div>
+                <button id="new-tab-btn">+</button>
+            </div>
+
+            <div class="tab-window-actions">
+
+                <div class="theme-toggle">
+                    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-sun-lighting-flaticons-flat-flat-icons.png"
+                        class="light-theme-icon hidden" alt="">
+                    <img src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/49/000000/external-moon-astrology-and-symbology-prettycons-lineal-color-prettycons.png"
+                        class="dark-theme-icon" alt="">
+                </div>
+
+                <div class="minimize-window" title="Minimize">
+                    <svg class="window-action" xmlns="http://www.w3.org/2000/svg" width="1.4rem" height="1.4rem"
+                        viewBox="0 0 24 24" fill="none">
+                        <path d="M3 12L21 12" stroke="" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="resize-window" title="Resize">
+                    <svg class="window-action" xmlns="http://www.w3.org/2000/svg" width="1.4rem" height="1.4rem"
+                        viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M7.5 3H14.6C16.8402 3 17.9603 3 18.816 3.43597C19.5686 3.81947 20.1805 4.43139 20.564 5.18404C21 6.03969 21 7.15979 21 9.4V16.5M6.2 21H14.3C15.4201 21 15.9802 21 16.408 20.782C16.7843 20.5903 17.0903 20.2843 17.282 19.908C17.5 19.4802 17.5 18.9201 17.5 17.8V9.7C17.5 8.57989 17.5 8.01984 17.282 7.59202C17.0903 7.21569 16.7843 6.90973 16.408 6.71799C15.9802 6.5 15.4201 6.5 14.3 6.5H6.2C5.0799 6.5 4.51984 6.5 4.09202 6.71799C3.71569 6.90973 3.40973 7.21569 3.21799 7.59202C3 8.01984 3 8.57989 3 9.7V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.0799 21 6.2 21Z"
+                            stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="close-window" title="Close">
+                    <svg class="window-action" xmlns="http://www.w3.org/2000/svg" width="1.4rem" height="1.4rem"
+                        viewBox="0 0 24 24" fill="none">
+                        <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="content-container-wrapper">
+        </div>
+    </div>
+
+    <div class="broswer-dock hidden">
+        <img src="https://cdn-icons-png.flaticon.com/512/1336/1336538.png" alt="">
+    </div>
+    <div id="warningPopup" class="popup hidden">
+        <div class="popup-content">
+            <div class="popup-heading-msg">Close all tabs?
+            </div>
+            <p class="popup-instruction-msg">You have <span class="popup-tab-copunt">0</span> tabs open in this browser
+                window.</p>
+            <div class="popup-actions">
+                <button class="popup-primary-btn" onclick="reloadPage()">Close all</button>
+                <button class="popup-secondary-btn" onclick="closePopup()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
