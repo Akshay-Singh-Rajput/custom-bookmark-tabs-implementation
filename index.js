@@ -11,7 +11,7 @@ const projectIntro = `<div class="project-introduction">
                     <li>Enhanced with creative UI features like theme toggling and popup warnings</li>
                 </ul>
                 <p>
-                   Explore our basic yet effective solution on <a href="#" target="_blank">GitHub</a>.
+                   Explore our basic yet effective solution on <a href="https://github.com/Akshay-Singh-Rajput/custom-bookmark-tabs-implementation" target="_blank">GitHub</a>.
                 </p>
             </div>`;
 
