@@ -306,6 +306,18 @@ iframe {
     padding: var(--default-padding);
 }
 
+.reload-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    margin-right: .4rem;
+    cursor: pointer;
+}
+.reload-icon>svg{
+    fill: var(--text-color);
+}
+
 .search-field {
     width: 80%;
     height: 100%;
@@ -355,6 +367,7 @@ iframe {
     font-size: 1.8rem;
     font-weight: 400;
     flex: 1;
+    margin-top: .8rem;
 }
 
 .popup-actions {
